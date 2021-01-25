@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <img src="./img/stone-gareden-main.jpg">
+        <div class="content-head container">
+            <div>
+                <h1>here is</h1>
+                <div class="content-title-header">
+                    <h1>Stone</h1>
+                    <h1>Garden</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+                <h1 class="title">Stone Garden</h1>
+                <h2>A Heaven for Landscape Photography </h2>
+                <p>One of the tourists’ reasons to visit Stone Garden Geopark is indeed to feel its unique nuance, which is similar to a cartoon called the Flintstones. These people would take memorable pictures in front of such majestic natural landmark.
+                    The shapes of the stones vary and they look quite artistic. No wonder, most visitors won’t miss the chance to conduct photography during the visit. As an alternative, they are allowed to explore the site and climb the hill with the
+                    help of a local guide.</p>
+                <p>The next allure of Stone Garden Geopark is its history. According to experts, this place was once a seabed mountain! Not to mention it is said the age is more than 27 million years! There are significant proofs scattered on the site, including
+                    the fossils of coral animals and hollow rocks (representing the shape of coral). Through the years, these corals harden and turn into limestone rocks that tourists can see on the site now. For further history regarding the site, make
+                    sure to ask either the locals or tour guide.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="content-photo">
+        <div class="content-photo wbg">
+            <div class="row">
+                <div class="content-photo-column">
+                    <img src="./img/stone-gareden-main.jpg">
+                    <img src="./img/stone-gareden1.jpg">
+                    <img src="./img/stone-gareden2.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/stone-gareden3.jpg">
+                    <img src="./img/stone-gareden4.jpg">
+                    <img src="./img/stone-gareden5.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/stone-gareden6.jpg">
+                    <img src="./img/stone-gareden7.jpg">
+                    <img src="./img/stone-gareden.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Photo Section -->
+
+    <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location and Contact</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5193744235225!2d107.43282921477237!3d-6.828152795065135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68fc59a3dab8ed%3A0x720ec8a7685d9ca3!2sStone%20Garden%20Citatah!5e0!3m2!1sen!2sjp!4v1611495085508!5m2!1sen!2sjp"
+                        width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="detail-col-right">
+                <ul>
+                    <li style="list-style-image: url(./img/place.png);">
+                        Gunung Masigit, Citatah, Kec. Cipatat, Kabupaten Bandung Barat, Jawa Barat 40554, Indonesia
+                    </li>
+
+                    <li style="list-style-image: url(./img/call.png);">
+                        +6287834423888
+                    </li>
+                    <li style="list-style-image: url(./img/web.png);">
+                        <a href="http://stonegarden.or.id/" target="_blank"> stonegarden.or.id</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>

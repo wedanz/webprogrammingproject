@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <video autoplay loop muted> 
+            <source src="./vid/dago-bakery.mp4" type="video/mp4"> 
+            </video>
+        <div class="content-head container">
+            <div>
+                <h1>here is</h1>
+                <div class="content-title-header">
+                    <h1>Dago</h1>
+                    <h1>Bakery</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+                <h1 class="title">Dago Bakery</h1>
+                <h2></h2>
+                <p>One of the top destination part of Wonderful Indonesia that worth visiting when you are in Bandung, we served traditional Indonesian food, Western food and other taste of the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="content-photo">
+        <div class="content-photo wbg">
+            <div class="row">
+                <div class="content-photo-column">
+                    <img src="./img/dago-bakery-main.jpg">
+                    <img src="./img/dago-bakery7.jpg">
+                    <img src="./img/dago-bakery2.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/dago-bakery3.jpg">
+                    <img src="./img/dago-bakery4.jpg">
+                    <img src="./img/dago-bakery5.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/dago-bakery6.jpg">
+                    <img src="./img/dago-bakery1.jpg">
+                    <img src="./img/dago-bakery.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Photo Section -->
+
+    <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location and Contact</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15845.290102150664!2d107.61502132700916!3d-6.851888370772446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e721aafd1169%3A0xb979b43bdab42e1f!2sDago%20Bakery!5e0!3m2!1sen!2sjp!4v1611496859485!5m2!1sen!2sjp"
+                        width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="detail-col-right">
+                <ul>
+                    <li style="list-style-image: url(./img/place.png);">
+                        Jalan Ir. H. juanda No.497a Dago Coblong, Ciburial, Kec. Cimenyan, Bandung, Jawa Barat 40198, Indonesia
+                    </li>
+
+                    <li style="list-style-image: url(./img/call.png);">
+                        +622220453107
+                    </li>
+                    <li style="list-style-image: url(./img/web.png);">
+                        <a href="https://www.dagobakery.com/" target="_blank"> www.dagobakery.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>

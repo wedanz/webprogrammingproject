@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="error-head">
+        <img src="./img/error.png">
+        <div class="content-head container">
+            <div>
+                <a href="index.html">
+                    <h1>Back Home</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>

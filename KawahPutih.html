@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <img src="./img/kawah-putih-main.jpg">
+        <div class="content-head container">
+            <div>
+                <h1>here is</h1>
+                <div class="content-title-header">
+                    <h1>Kawah</h1>
+                    <h1>Putih</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+                <h1 class="title">Kawah Putih</h1>
+                <h2>The Magical Splendor and Hypnotizing Ambience of a Crater</h2>
+                <p>Kawah Putih is located near the charming little market town of Ciwidey, approximately 50 Kilometers south of Bandung. The Crater Lake is one of two craters of Mount Patuha, with the dry Kawah Patuha or the Patuha Crater located 600 meters
+                    to its northwest, being the other. Stepping into Kawah Putih is like entering a different realm.</p>
+                <p>As the name suggests, the Crater Lake and its surroundings are dominated by a pale white color which radiates a rather hypnotizing ambience. The vast dormant volcanic crater is filled with surreal turquoise-colored water. The tree-clad
+                    cliffs surrounding the crater reach around 2,500 meters above sea level and make for a stunning backdrop, especially when the clouds start to roll in. The altitude here brings with it chilly temperatures, which in a way, will add to
+                    the magical splendor of Kawah Putih.
+                </p>
+                <p>In World War II the plant was taken over by the Japanese military and was operated under the name Kawah Putih Kenzanka Yokoya Ciwidey. Today the plant no longer exists , however, entry points to its tunnels, remnants of these mining activities
+                    can still be seen at several points around the current site. First opened for visitors in 1987, nowadays Kawah Putih is a favorite destination for tourists and day trippers who are simply stunned by its mesmerizing ambience. On weekends
+                    and on holidays, quite large numbers of visitors frequently visit the area just to immerse themselves in the mystical beauty of nature.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="content-photo">
+        <div class="content-photo wbg">
+            <div class="row">
+                <div class="content-photo-column">
+                    <img src="./img/kawah-putih-main.jpg">
+                    <img src="./img/kawah-putih1.jpg">
+                    <img src="./img/kawah-putih2.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/kawah-putih3.jpg">
+                    <img src="./img/kawah-putih4.jpg">
+                    <img src="./img/kawah-putih5.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/kawah-putih6.jpg">
+                    <img src="./img/kawah-putih7.jpg">
+                    <img src="./img/kawah-putih.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Photo Section -->
+
+    <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.652115776408!2d107.39995096477432!3d-7.16615404482585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e688c1383dc510f%3A0xfab41bb8e4a3a83e!2sWhite%20Crater!5e0!3m2!1sen!2sjp!4v1611496317175!5m2!1sen!2sjp"
+                        width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="detail-col-right">
+                <ul>
+                    <li style="list-style-image: url(./img/place.png);">
+                        Sugihmukti, Pasirjambu, Bandung, West Java, Indonesia
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>

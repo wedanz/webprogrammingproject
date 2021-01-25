@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <img src="./img/tebing-keraton-main.jpg">
+        <div class="content-head container">
+            <div>
+                <h1>here is</h1>
+                <div class="content-title-header">
+                    <h1>TEBING</h1>
+                    <h1>KERATON</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+                <h1 class="title">TEBING KERATON</h1>
+                <h2>North Bandung’s Fascinating Natural Landscape</h2>
+                <p>Tebing Keraton can be simply interpreted as “The Royal (Palace) Cliff”. The name perfectly illustrates the majestic vista of north Bandung’s fascinating natural landscapes as ones stands on the cliff. At 1,200 meters above sea level, Tebing
+                    Keraton is located within the Ir H Djuanda Forest Park, at Ciburial Village, Cimenyan sub-district, in the Bandung Regency. At the main area, there is a rock that bulges over the edge of the cliff which makes it a perfect place to
+                    observe over the incredible natural surroundings.</p>
+                <p> Here, one will be presented with the truly dramatic view of green hills, a winding river, thick forests, rice paddies, as well as the looming mountains on the horizon. The amazing landscape is part of the canyon that is formed by the Lembang
+                    Hill on its opposite side. The cliff present its finest vista at sunset and sunrise, when the sky is painted with mesmerizing colors that perfectly fuse with the green surroundings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="content-photo">
+        <div class="content-photo wbg">
+            <div class="row">
+                <div class="content-photo-column">
+                    <img src="./img/tebing-keraton-main.jpg">
+                    <img src="./img/tebing-keraton1.jpg">
+                    <img src="./img/tebing-keraton2.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/tebing-keraton3.jpg">
+                    <img src="./img/tebing-keraton4.jpg">
+                    <img src="./img/tebing-keraton5.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/tebing-keraton6.jpg">
+                    <img src="./img/tebing-keraton7.jpg">
+                    <img src="./img/tebing-keraton.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Photo Section -->
+
+    <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location and Contact</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.881513250806!2d107.6636151!3d-6.8340683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f905d027e880a47!2sTebing%20Karaton!5e0!3m2!1sen!2sjp!4v1611493011968!5m2!1sen!2sjp" width="800"
+                        height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="detail-col-right">
+                <ul>
+                    <li style="list-style-image: url(./img/place.png);">
+                        Ciburial, Cimenyan, West Bandung Regency, West Java 40198, Indonesia
+                    </li>
+
+                    <li style="list-style-image: url(./img/call.png);">
+                        +62222515895
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>

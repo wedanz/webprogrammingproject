@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp" />
+    <link rel="stylesheet" href="style.css">
+    <title>Enjoy Bandung</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+                <div class="nav-list">
+                    <div class="menuround">
+                        <div class="menubar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#topsights">Top sights</a></li>
+                        <li><a href="index.html#topattraction">Top Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- section-head Section  -->
+    <section id="content-head">
+        <img src="./img/Orchid-Fores-main.jpg">
+        <div class="content-head container">
+            <div>
+                <h1>here is</h1>
+                <div class="content-title-header">
+                    <h1>Orchid</h1>
+                    <h1>Forest</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section-head Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about">
+            <div class="col-middle">
+                <h1 class="title">Orchid Forest</h1>
+                <h2> The Largest Orchid Forest in Indonesia</h2>
+                <p>Orchid Forest Cikole is projected to be the largest orchid forest in Indonesia. Its location is surrounded by 12 hectares of protected forest filled with pine trees. There are now 157 species of orchids from Indonesia, United States, Peru
+                    and Venezuela. There are also rare orchids such as black orchids, semar bag orchids and so on.</p>
+                <p>To enjoy the beautiful and serene scenery of the pine tree forest, visitors could walk on a wooden bridge that connects between pine trees. The length reaches 125 meters with a height of more than 20 meters. This bridge has become a spot
+                    for photos that are commonly visited by visitors.</p>
+                <p>Paphio Terace stage, one of the main facilities there, has the concept of a showroom in the open air. The stage blends with nature. This performance area was once the location of an international music festival, the Lala Festival.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="content-photo">
+        <div class="content-photo wbg">
+            <div class="row">
+                <div class="content-photo-column">
+                    <img src="./img/Orchid-Fores-main.jpg">
+                    <img src="./img/Orchid-Fores1.jpg">
+                    <img src="./img/Orchid-Fores2.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/Orchid-Fores3.jpg">
+                    <img src="./img/Orchid-Fores4.jpg">
+                    <img src="./img/Orchid-Fores5.jpg">
+                </div>
+                <div class="content-photo-column">
+                    <img src="./img/Orchid-Fores6.jpg">
+                    <img src="./img/Orchid-Fores7.jpg">
+                    <img src="./img/Orchid-Fores.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Photo Section -->
+
+    <!-- Location Section -->
+    <section id="content-detail">
+        <div class="content-detail container">
+
+            <div class="detail-col-left">
+                <h3 class="title">Location and Contact</h3>
+                <div class="detail-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.9125836071435!2d107.6352863147721!3d-6.780492995098957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e038e1a71607%3A0x79f858778d1e2e62!2sOrchid%20Forest%20Cikole!5e0!3m2!1sen!2sjp!4v1611497472143!5m2!1sen!2sjp"
+                        width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <div class="detail-col-right">
+                <ul>
+                    <li style="list-style-image: url(./img/place.png);">
+                        Genteng, Cikole, Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia
+                    </li>
+
+                    <li style="list-style-image: url(./img/call.png);">
+                        +62227612816
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Location Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <p>Created by: </p>
+            <h1>Jonathan Christie</h1>
+            <h2>M20W7257</h2>
+            <p>Copyright © 2021 </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script>
+        const menuround = document.querySelector('.header .nav-bar .nav-list .menuround');
+        const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+        const header = document.querySelector('.header.container');
+
+        menuround.addEventListener('click', () => {
+            menuround.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                header.style.backgroundColor = '#29323c';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+
+</html>
